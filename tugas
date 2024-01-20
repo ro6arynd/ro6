@@ -1,0 +1,53 @@
+fun sekolah(name: String, jurusan: String) {
+    println("$name, jurusan is $jurusan di SMKN9")
+} 
+
+fun nilai(nama: String, nilai: Int, ranking: Int) {
+    println("Nilai $nama totalnya $nilai mendapatkan ranking $ranking")
+}
+
+fun lulus(nama : String, mtk : Int, big : Int, bi : Int, pkn : Int, ket : String) : String{
+    return "Siswa bernama $nama dengan deskripsi nilai berikut. \nnilai Mtk \t:$mtk, \nnilai B.ing \t:$big, \nnilai B.ind \t:$bi, \nnilai Pkn \t:$pkn, \ndinyatakan \t$ket"
+}
+
+fun jumlah(nilaia : Int, nilaib : Int) : Int{
+    return nilaia + nilaib
+}
+
+fun kurang(nilaia : Int, nilaib : Int) : Int{
+    return nilaia - nilaib
+}
+
+fun kali(nilaia : Int, nilaib : Int) : Int{
+    return nilaia * nilaib
+}
+
+fun bagi(nilaia : Int, nilaib : Int) : Int{
+    return nilaia / nilaib
+}
+
+fun segitiga(alas: Int, tinggi : Int, stengah : Double) :Double {
+    return alas * tinggi * stengah
+}
+fun ppanjang(panjang: Int, lebar : Int) : Int {
+    return panjang * lebar
+}
+fun main() {
+    sekolah("Ro6","Rpl")
+    nilai("Budi",350,10)
+    val kelulusan = lulus("Udin",80,90,100,75,"Lulus")
+    print(kelulusan)
+    val add = jumlah(10,21)
+    println("\nIni adalah hasil penjumlahan \t$add")
+    val min = kurang(10,21)
+    println("Ini adalah hasil pengurangan \t$min")
+    val times = kali(10,21)
+    println("Ini adalah hasil perkalian \t$times")
+    val divide = bagi(10,21)
+    println("Ini adalah hasil pembagian \t$divide")
+    val lsgitiga = segitiga(10,22,0.5)
+    println("Luas segitiga adalah :$lsgitiga")
+    val lpp = ppanjang(10,22)
+    println("Luas persegi panjang adalah :$lpp")
+    
+}
